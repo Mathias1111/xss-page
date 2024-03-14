@@ -6,22 +6,11 @@
 </head>
 <body>
 <script>
-
-top.alert("redirect in 10 seconds")
-    
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-sleep(20000).then(() => { 
-    
+  
   if (top.location != location) {
     top.location.href = document.location.href ;
   }
-
-});
-
-    
+  
 
 </script>
 
